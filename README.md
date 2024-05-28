@@ -63,7 +63,17 @@ unzip m4singer_pe.zip
 
 # 2.训练和推理
 ## 使用webUI
-进行点击webui.bat打开webui页面，你可以在里面进行训练和推理
+在文件根目录下新建文本文件，输入以下内容
+```shell
+@echo off
+call conda activate your_env_name
+python webui.py
+```
+其中`your_env_name`是你创建的conda环境的名字
+
+将上述代码保存为`webui.bat`文件。在保存时，将`保存类型`设置为`所有文件`，并将文件名以`.bat`结尾
+
+进行点击`webui.bat`打开webui页面，你可以在里面进行训练和推理
 
 ## 使用命令行
 如要使用命令行进行训练和推理，请参考[CoMoSvc的README文档](https://github.com/Grace9994/CoMoSVC/blob/main/README.md)

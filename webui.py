@@ -441,4 +441,4 @@ with app:
                         show_music_btn.click(show_music,inputs=input_ids,outputs=output_audio)
 
     # 启动应用
-    app.launch(debug=True,share=True)
+    app.launch(inbrowser=True)
